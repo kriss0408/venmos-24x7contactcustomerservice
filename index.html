@@ -10,21 +10,41 @@
   <style>
     body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; text-align: center; margin: 0; padding: 0; }
     .container { max-width: 600px; margin: 50px auto; background: #fff; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px; }
+    header, footer { background: #007bff; color: #fff; padding: 15px 0; text-align: center; font-size: 1.2rem; }
     h1 { color: #007bff; }
     p { font-size: 1.1rem; }
     .contact { font-size: 1.3rem; font-weight: bold; color: #111; margin: 20px 0; }
     .faq { text-align: left; margin-top: 20px; }
     .faq h3 { color: #007bff; }
     .faq p { margin-bottom: 15px; }
-    footer { margin-top: 30px; font-size: 0.9rem; color: #666; }
+    .form-container { text-align: left; margin-top: 20px; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    label, input, button { display: block; width: 100%; margin-top: 10px; }
+    input, button { padding: 10px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc; }
+    button { background: #007bff; color: #fff; border: none; cursor: pointer; }
+    button:hover { background: #0056b3; }
+    .note { font-size: 0.9rem; color: #777; margin-top: 10px; }
   </style>
 </head>
 <body>
+  <header>
+    Venmos Designers - Customer Support
+  </header>
+
   <div class="container">
-    <h1>Venmos Designers - Customer Support</h1>
+    <h1>Welcome to Venmos Designers</h1>
     <p>We specialize in **on-demand clothing production**, including **t-shirts and shirts**. If you have any questions or need assistance, we're here to help!</p>
     <p class="contact">📞 Contact Us: +1 (888) 322-8967</p>
-    
+
+    <div class="form-container">
+      <h3>Track Your Order</h3>
+      <form>
+        <label for="order-id">Enter Your Order ID:</label>
+        <input type="text" id="order-id" name="order-id" placeholder="e.g., VN123456789" required>
+        <button type="submit">Track Now</button>
+      </form>
+      <p class="note">Note: Your Order ID can be found on your bill or in the registered email.</p>
+    </div>
+
     <div class="faq">
       <h3>Frequently Asked Questions (FAQs)</h3>
       <p><strong>📌 How can I place an order?</strong><br> You can place an order through our official website or contact our support team for guidance.</p>
@@ -32,10 +52,10 @@
       <p><strong>📌 Do you offer custom designs?</strong><br> Yes! We provide fully customizable t-shirts and shirts tailored to your needs.</p>
       <p><strong>📌 Is this website for orders?</strong><br> No, this page is **only for help and customer inquiries**.</p>
     </div>
-
-    <footer>
-      <p>&copy; 2025 Venmos Designers. This website is for support and inquiries only.</p>
-    </footer>
   </div>
+
+  <footer>
+    &copy; 2025 Venmos Designers. This website is for support and inquiries only.
+  </footer>
 </body>
 </html>
